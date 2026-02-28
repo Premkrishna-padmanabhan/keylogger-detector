@@ -1,33 +1,72 @@
-🛡️ Keylogger Detection Tool
+# Keylogger Detection Tool
 
-A Python-based Windows cybersecurity project that detects potential keylogger activity using process monitoring, startup registry checks, and heuristic analysis.
+A Python-based Windows cybersecurity project that detects potential keylogger activity using process monitoring and startup registry analysis.
 
-🔍 Features
+This project demonstrates basic endpoint threat detection techniques used in defensive security.
 
-Process monitoring
+---
 
-Suspicious keyword detection
+## Features
 
-Startup persistence (Registry) check
+- Monitors running processes
+- Detects suspicious keywords in process names
+- Checks Windows startup registry entries
+- Real-time monitoring loop
+- Logs alerts to a file
 
-Real-time scanning
+---
 
-Alert logging
+## Technologies Used
 
-🛠 Tech Stack
+- Python 3
+- psutil
+- pywin32
+- colorama
+- Windows Registry (winreg)
 
-Python
+---
 
-psutil
+## Installation
 
-pywin32
+1. Clone the repository:
 
-colorama
+git clone https://github.com/yourusername/keylogger-detector.git
 
-▶ Run
+2. Navigate to the project folder:
+
+cd keylogger-detector
+
+3. Install required packages:
+
 pip install psutil pywin32 colorama
+
+---
+
+## How to Run
+
 python main.py
 
-⚠ Disclaimer
+The program will:
+- Scan every 15 seconds
+- Display alerts in the terminal
+- Save alerts inside alerts.log
 
-For educational and defensive cybersecurity purposes only.
+---
+
+## Project Structure
+
+keylogger-detector/
+│
+├── main.py
+├── process_monitor.py
+├── signature_checker.py
+├── registry_checker.py
+├── logger.py
+├── requirements.txt
+└── README.md
+
+---
+
+## Disclaimer
+
+This project is created for educational and defensive cybersecurity purposes only.
