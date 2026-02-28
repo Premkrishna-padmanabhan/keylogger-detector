@@ -1,0 +1,1 @@
+2026-02-28 19:46:04.743221 - [ALERT] Suspicious Process: {'cpu_percent': 0.0, 'pid': 4960, 'name': 'python.exe', 'exe': 'D:\\python files\\keylogger-detector project\\.venv\\Scripts\\python.exe'}
